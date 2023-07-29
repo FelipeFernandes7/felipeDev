@@ -23,6 +23,7 @@ export const ProfileImage = styled.img`
   height: 100%;
   max-height: 35rem;
   background-size: contain;
+  border-radius: 0.5rem;
 `;
 
 export const Title = styled.h1`
@@ -35,7 +36,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h1`
   font-size: 1rem;
-  color: #a020f0;
+  color: #7d5fff;
   margin-bottom: 1rem;
 `;
 

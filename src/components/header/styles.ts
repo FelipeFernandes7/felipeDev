@@ -11,6 +11,9 @@ export const Navbar = styled.nav`
   height: 2.5rem;
   padding: 2.5rem 2.5rem;
   margin-bottom: 1.5rem;
+  @media screen and (max-width: 768px) {
+    border-bottom: 0.2rem solid #202020;
+  }
 `;
 
 export const Content = styled.div`

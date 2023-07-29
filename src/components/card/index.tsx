@@ -10,6 +10,7 @@ import {
   SmallTitle,
 } from "./styles";
 import { pages } from "../../locale/pt/pages";
+import { Social } from "../social";
 
 export function Card() {
   return (
@@ -21,6 +22,8 @@ export function Card() {
           <Title>{pages.card.name}</Title>
           <SmallTitle>{pages.card.profession}</SmallTitle>
           <Description>{pages.card.description}</Description>
+          <h1>Minhas redes sociais</h1>
+          <Social/>
         </InformationCard>
       </Section>
     </Container>

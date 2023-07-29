@@ -23,7 +23,7 @@ export const Content = styled.div`
 `;
 export const Title = styled.h1`
   font-size: 2rem;
-  color: #a020f0;
+  color: #7d5fff;
   margin-bottom: 1rem;
 `;
 
