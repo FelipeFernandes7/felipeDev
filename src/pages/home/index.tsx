@@ -18,8 +18,8 @@ export function Home() {
             scrollTrigger: {
               trigger: `#stack-${stack.id}`,
               scrub: true,
-              start: "top 650",
-              end: "bottom 750px",
+              start: "top 700",
+              end: "bottom 900px",
             },
           })
           .fromTo(
