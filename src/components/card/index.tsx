@@ -2,12 +2,16 @@ import * as Chakra from "@chakra-ui/react";
 import { IconType } from "react-icons";
 
 interface CardProps {
+  id: string;
   icon: IconType;
   label: string;
+  className?: string;
 }
-export function Card({ label, icon }: CardProps) {
+export function Card({ className, label, icon, id }: CardProps) {
   return (
     <Chakra.Flex
+      id={id}
+      className={className}
       w={"full"}
       h={{ md: "200px", base: "150px" }}
       maxW={{ md: "200px", base: "150px" }}

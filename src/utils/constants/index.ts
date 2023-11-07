@@ -3,7 +3,7 @@ import * as Fa from "react-icons/fa";
 import * as Si from "react-icons/si";
 import { TbBrandVite } from "react-icons/tb";
 
-interface StacksType {
+export interface StacksType {
   id: string;
   label: string;
   icon: IconType;
