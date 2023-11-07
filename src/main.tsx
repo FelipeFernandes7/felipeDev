@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { RouterProvider } from "react-router-dom";
-import { GlobalStyle } from "./styles.ts";
 import { router } from "./App.tsx";
+import { ChakraProvider } from "@chakra-ui/react";
+import { GlobalStyle } from "./styles.ts";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <GlobalStyle />
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <ChakraProvider>
+      <GlobalStyle />
+      <RouterProvider router={router} />
+    </ChakraProvider>
+  </React.StrictMode>,
 );
