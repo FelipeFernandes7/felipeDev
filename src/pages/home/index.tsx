@@ -11,7 +11,6 @@ export function Home() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    // teste
     gsap.context(() => {
       stacks.forEach((stack) => {
         const tl = gsap
