@@ -1,23 +1,34 @@
+import * as Chakra from "@chakra-ui/react";
 import { Card } from "../../components/card";
-import { home } from "../../locale/pt/pages/home";
-import Typewriter from "typewriter-effect";
-import { BoxContainer, Content, Title } from "./styles";
+import { stacks } from "../../utils/constants";
 
 export function Home() {
   return (
-    <BoxContainer>
-      <Content>
-        <Title>{home.title}</Title>
-        <Typewriter
-          options={{
-            strings: home.description,
-            autoStart: true,
-            deleteSpeed: 80,
-            delay: 60,
-          }}
-        />
-      </Content>
-      <Card />
-    </BoxContainer>
+    <Chakra.Flex alignItems={"center"} w={"full"} flexDirection={"column"}>
+      <Chakra.Text
+        fontSize={"1.5rem"}
+        fontWeight={700}
+        mt={"1.5rem"}
+        color={"rgb(8 145 178)"}
+      >
+        Minhas Tecnologias
+      </Chakra.Text>
+      <Chakra.Box
+        w={"full"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        display={"flex"}
+        flexWrap={"wrap"}
+        mt={"2rem"}
+        p={"1rem"}
+        gap={"1.5rem"}
+        borderRadius="md"
+        transition={"all linear 0.3s ease-in"}
+      >
+        {stacks.map((stack) => (
+          <Card key={stack.id} icon={stack.icon} label={stack.label} />
+        ))}
+      </Chakra.Box>
+    </Chakra.Flex>
   );
 }
